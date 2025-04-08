@@ -1,0 +1,62 @@
+{% extends 'main/layout/layout.html' %}
+
+{% block title %}Forum Studenckie{% endblock %}
+
+{% block content %}
+<main class="container mx-auto p-6">
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-4">Forum Studenckie – Twoje Zainteresowania</h2>
+      <p class="mb-6 text-gray-700">Witamy na Forum Studenckim – przestrzeni stworzonej 
+        z myślą o studentach i ich pasjach! Niezależnie od tego, czy interesujesz się 
+        technologią, sportem, kulturą, czy zupełnie niszowymi tematami – znajdziesz tu coś dla siebie.</p>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-4">Najpopularniejsze tematy</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-white p-4 rounded shadow">
+          <h3 class="text-lg font-bold mb-2">Technologia i Gadżety</h3>
+          <p>Dziel się opiniami o najnowszych urządzeniach, pytaj o porady zakupowe
+             i komentuj nowinki ze świata IT.</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <h3 class="text-lg font-bold mb-2">Kultura i Sztuka</h3>
+          <p>Porozmawiaj o filmach, książkach, muzyce, teatrze i wystawach. 
+            Znajdź innych fanów tej samej twórczości!</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <h3 class="text-lg font-bold mb-2">Sport i Rekreacja</h3>
+          <p>Szukasz towarzyszy do wspólnego biegania? A może chcesz 
+            podzielić się swoją trasą rowerową? To miejsce jest dla Ciebie.</p>
+        </div>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="text-lg font-bold mb-2">Podróże i Wymiany Międzynarodowe</h3>
+        <p>Wymieniaj się doświadczeniami z Erasmusa, pytaj o ciekawe miejsca na wakacje,
+             dziel się zdjęciami z podróży.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="text-lg font-bold mb-2">Rozwój osobisty i edukacja</h3>
+        <p>Jak lepiej organizować czas? Jakie kursy online warto zrobić? 
+            Inspiruj się i motywuj z innymi studentami.</p>
+      </div>
+    </div>
+    </section>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold mb-4">Dołącz do dyskusji!</h2>
+    <p class="text-gray-700">Zaloguj się, aby tworzyć nowe wątki, komentować, brać udział w ankietach i poznawać ludzi z podobnymi pasjami. Forum Studenckie to nie tylko miejsce do rozmowy – to przestrzeń, w której budujesz swoją sieć kontaktów, inspirujesz się i rozwijasz.</p>
+  </section>
+
+  <section>
+    <h2 class="text-center font-semibold mb-4">Masz pytania?</h2>
+    <div class="text-center mt-8">
+        <a href="{% url 'about' %}" class="btn btn-warning">Przejdź do strony O nas</a>
+      </div>
+    </div>    
+  </section>
+</main>
+
+
+  {% include 'main/test.html' %}
+{% endblock %}

@@ -48,3 +48,19 @@ def about(request):
 
 def contact(request):
     return render(request, 'main/contact.html')
+
+
+#NASZE PODSTRONY
+from django.shortcuts import render
+
+def kolo1(request):
+    return render(request, 'main/kolo-1.html')
+
+def kolo2(request):
+    return render(request, 'main/kolo-2.html')
+
+def kolo3(request):
+    return render(request, 'main/kolo-3.html')
+
+def kolo4(request):
+    return render(request, 'main/kolo-4.html')

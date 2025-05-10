@@ -1,0 +1,118 @@
+/* Navbar custom style */
+.custom-navbar {
+  background-color: #466ea2;
+  color: #ffffff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+  color: #ffffff;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #e2e2e2;
+}
+
+/* Sidebar */
+#sidebar-wrapper {
+  background-color: #173358;
+  color: #ffffff;
+  border-right: 2px solid #0f2540;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  min-height: calc(100vh - 56px);
+  position: fixed;
+  top: 56px;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  z-index: 1030;
+  margin-left: 0;
+  transition: margin-left 0.3s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: -300px;
+}
+
+/* Główna treść */
+#page-content-wrapper {
+  margin-left: 300px;
+  padding-bottom: 120px;
+  transition: margin-left 0.3s ease;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  margin-left: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#sidebar-wrapper .nav-link {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#sidebar-wrapper .nav-link i {
+  color: #ffffff;
+}
+
+#sidebar-wrapper .nav-link:hover {
+  background-color: #1f4475;
+  color: #ffffff;
+}
+
+/* Przycisk do sidebaru */
+.btn-sidebar-toggle {
+  background-color: #173358;
+  color: #ffffff;
+  border: 2px solid #173358;
+  font-weight: 600;
+  padding: 6px 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-sidebar-toggle:hover {
+  background-color: #ffffff;
+  color: #173358;
+  border-color: #173358;
+}
+
+/* RESPONSYWNOŚĆ */
+@media (max-width: 991.98px) {
+  #sidebar-wrapper {
+    display: none;
+  }
+
+  #page-content-wrapper {
+    margin-left: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  #wrapper.toggled #page-content-wrapper {
+    margin-left: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  #sidebarToggle {
+    display: none;
+  }
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: -300px !important;
+}
+
+.custom-navbar .nav-link {
+  margin: 0 12px;
+}
+
+footer {
+  position: relative;
+  z-index: 1100;
+}

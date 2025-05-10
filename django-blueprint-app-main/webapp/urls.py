@@ -20,9 +20,17 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+from forum import views as forum_views
+from django.contrib.auth import views as auth_views
+
+
+
 urlpatterns = [
     path('admin/', admin.site.urls), # default, part of django
     path('', include('main.urls')),
     path('news/', include('news.urls')), 
-    path('forum/', include('forum.urls')) #delegating authority to an internal application to forum.urls that is needed to be created
+    path('forum/<str:kolo_slug>/', forum_views.kolo_forum, name='kolo_forum'),
+    #path('accounts/login/', auth_views.LoginView.as_view(), name='login'),  # ✅ This fixes the 404
+
+    #path('forum/', include('forum.urls')) #delegating authority to an internal application to forum.urls that is needed to be created
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

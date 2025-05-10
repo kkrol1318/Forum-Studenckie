@@ -1,0 +1,19 @@
+<h2>Forum: {{ kolo|title }}</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add Post</button>
+</form>
+
+<hr>
+
+{% for post in posts %}
+    <div style="border:1px solid #ccc; margin:10px 0; padding:10px;">
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.content }}</p>
+        <small>By {{ post.author }} on {{ post.created_at }}</small>
+    </div>
+{% empty %}
+    <p>No posts yet for this section.</p>
+{% endfor %}

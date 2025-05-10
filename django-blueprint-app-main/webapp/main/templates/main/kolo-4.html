@@ -6,6 +6,8 @@
     <div class="features">
         <h1>Koło 4</h1>
         <p>Opis 4. koła zainteresowań. Tutaj możesz dodać dowolny tekst opisujący działalność grupy, spotkania, projekty itp.</p>
-        <button class="btn btn-primary">Dołącz do Koła</button>
+        <a href="{% url 'kolo_forum' 'kolo-4' %}">
+            <button class="btn btn-primary">Dołącz do Koła</button>
+        </a>
     </div>
 {% endblock %}

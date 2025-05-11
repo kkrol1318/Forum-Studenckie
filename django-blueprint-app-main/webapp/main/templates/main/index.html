@@ -45,16 +45,15 @@
 
   <section class="mb-8">
     <h2 class="text-xl font-semibold mb-4">Dołącz do dyskusji!</h2>
-    <p class="text-gray-700">Zaloguj się, aby tworzyć nowe wątki, komentować, brać udział w ankietach i poznawać ludzi z podobnymi pasjami. Forum Studenckie to nie tylko miejsce do rozmowy – to przestrzeń, w której budujesz swoją sieć kontaktów, inspirujesz się i rozwijasz.</p>
+    <p class="text-gray-700"><a href=login>Zaloguj się</a>, aby tworzyć nowe wątki, komentować, brać udział w ankietach i poznawać ludzi z podobnymi pasjami. Forum Studenckie to nie tylko miejsce do rozmowy – to przestrzeń, w której budujesz swoją sieć kontaktów, inspirujesz się i rozwijasz.</p>
   </section>
+{% if user.is_authenticated %}
+<p>Witaj {{ user.username }}</p>
+{% else %}
+<p> Witaj piękny nieznajomy </p>
+{%endif%}
 
-  <section>
-    <h2 class="text-center font-semibold mb-4">Masz pytania?</h2>
-    <div class="text-center mt-8">
-        <a href="{% url 'about' %}" class="btn btn-warning">Przejdź do strony O nas</a>
-      </div>
-    </div>    
-  </section>
+  
 </main>
 
 

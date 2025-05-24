@@ -1,0 +1,24 @@
+# Ignorowanie środowiska wirtualnego
+venv/
+
+# Pliki VS Code
+.vscode/
+
+# PyCharm/IntelliJ
+.idea/
+
+# Kompilacje Pythona
+__pycache__/
+*.py[cod]
+
+# Pliki bazy danych i migracji (opcjonalnie)
+*.sqlite3
+*.db
+*.log
+
+# Pliki systemowe
+.DS_Store
+
+# Pliki środowiskowe
+.env
+*.env

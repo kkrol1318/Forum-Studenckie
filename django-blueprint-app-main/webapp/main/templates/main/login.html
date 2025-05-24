@@ -1,0 +1,27 @@
+{% extends "main/layout/layout.html" %}
+
+{% block title %}Example Static Page{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Login Now</h1>
+ <div class="login">
+        <form method="POST" autocomplete="off">
+             {% csrf_token %}
+             <!--formsy logowania od django-->
+             {{loginform.as_p}}
+             <input type="submit" value="Login"/>
+        </form>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    Example card content
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

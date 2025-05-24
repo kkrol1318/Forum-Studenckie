@@ -1,0 +1,20 @@
+{% extends "main/layout/layout.html" %}
+
+{% block title %}Example Static Page{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Register Now</h1>
+   
+    <div class="register">
+        <form method="POST" autocomplete="off">
+             {% csrf_token %}
+             <!-- formsy do rejestracji do django -->
+             {{registerform.as_p}}
+             <input type="submit" value="REGISTER"/>
+        </form>
+    </div>
+
+   
+</div>
+{% endblock %}

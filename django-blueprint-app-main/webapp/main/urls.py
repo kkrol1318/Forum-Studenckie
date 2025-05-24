@@ -12,4 +12,8 @@ urlpatterns = [
     path('kolo-2/', views.kolo2, name='kolo2'),
     path('kolo-3/', views.kolo3, name='kolo3'),
     path('kolo-4/', views.kolo4, name='kolo4'),
+    path('register', views.register, name='register'),
+    path('login', views.login, name='login'),
+    path('logout', views.user_logout, name='logout'),
+    path('new_post', views.new_post, name='new_post'),
 ]

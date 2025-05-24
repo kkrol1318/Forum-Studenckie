@@ -116,3 +116,52 @@ footer {
   position: relative;
   z-index: 1100;
 }
+
+.bg-dark {
+  background-color: #466ea2 !important;
+  color: #ffffff;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.bg-dark a {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+.bg-dark a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.button-dark {
+  background-color: #173358 !important;
+  color: #ffffff !important;
+  border: 2px solid #173358;
+  font-weight: 600;
+  padding: 6px 16px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+  border-radius: 0.375rem;
+}
+
+.button-dark:hover {
+  background-color: #ffffff !important;
+  color: #173358 !important;
+  text-decoration: none;
+}
+
+.navbar a.register-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar a.register-link:hover {
+  color: #a7c4ff;
+  text-decoration: underline;
+}

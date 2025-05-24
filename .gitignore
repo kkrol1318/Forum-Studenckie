@@ -24,3 +24,4 @@ __pycache__/
 *.env
 
 *.sqlite3
+db.sqlite3

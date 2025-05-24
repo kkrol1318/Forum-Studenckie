@@ -1,11 +1,54 @@
 {% extends 'main/layout/layout.html' %}
 
+{% load static %}
+
 {% block title %}Koło 3{% endblock %}
 
 {% block content %}
-    <div class="features">
-        <h1>Koło 3</h1>
-        <p>Opis 3. koła zainteresowań. Tutaj możesz dodać dowolny tekst opisujący działalność grupy, spotkania, projekty itp.</p>
-        <button class="btn btn-primary">Dołącz do Koła</button>
+
+<div class="w-100 mb-4" style="max-height: 300px; overflow: hidden;">
+    <img src="{% static 'main/img/kolo-3-banner.svg' %}" alt="Baner Koła Szachowego" class="img-fluid w-100" style="object-fit: cover; height: 100%;">
+</div>
+<div class="container">
+    <h1>Koło Zainteresowań: Szachowe</h1>
+    <p>Lubisz myśleć strategicznie i przewidywać ruchy przeciwnika? Naucz się grać w szachy lub doskonal swoje umiejętności z nami!</p>
+
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">🗓️ Harmonogram Spotkań</h5>
+                    <ul class="mb-0">
+                        <li>Poniedziałek – analiza partii (15:00-16:30)</li>
+                        <li>Czwartek – turnieje (16:00-18:00)</li>
+                        <li>Sobota – symultany i sparingi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">♟️ Galeria</h5>
+                    <ul class="mb-0">
+                        <li>Turniej szkolny – styczeń 2025</li>
+                        <li>Szachy błyskawiczne – luty 2025</li>
+                        <li>Spotkanie z arcymistrzem – czerwiec 2025</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Dołącz do nas!</h5>
+                    <p class="card-text">Szach i mat? Naucz się wygrywać z nami!</p>
+                    <a href="mailto:szachy@kolozainteresowan.pl" class="btn btn-primary">Zapisz się</a>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 {% endblock %}

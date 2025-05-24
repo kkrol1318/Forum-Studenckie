@@ -45,7 +45,10 @@
                 <div class="card-body">
                     <h5 class="card-title">Dołącz do nas!</h5>
                     <p class="card-text">Chcesz nauczyć się programować? Zacznij z nami!</p>
-                    <a href="mailto:kolo@informatyczne.pl" class="btn btn-primary">Zapisz się</a>
+                    <form method="post" action="{% url 'forum:join_kolo' kolo='kolo-2' %}">
+             {% csrf_token %}
+             <button class="btn btn-primary">Dołącz do Koła</button>
+            </form>
                 </div>
             </div>
         </div>

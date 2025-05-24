@@ -154,3 +154,14 @@ footer {
   color: #173358 !important;
   text-decoration: none;
 }
+
+.navbar a.register-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar a.register-link:hover {
+  color: #a7c4ff;
+  text-decoration: underline;
+}

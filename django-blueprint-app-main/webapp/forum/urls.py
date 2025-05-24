@@ -6,14 +6,3 @@ urlpatterns = [
     path('frequent_questions', views.frequent_questions)
 ]
  
-
- # forum/urls.py
-from django.urls import path
-from . import views
-
-app_name = 'forum'
-
-urlpatterns = [
-    path('join/<str:kolo>/', views.join_kolo,    name='join_kolo'),
-    path('<str:kolo>/',        views.forum_view,  name='forum'),
-]

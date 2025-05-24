@@ -7,11 +7,6 @@
         <h1>Koło 1</h1>
         <p>Opis 1. koła zainteresowań. Tutaj możesz dodać dowolny tekst opisujący działalność grupy, spotkania, projekty itp.</p>
         <a href="{% url 'new_post' %}">Dodaj post</a>
-        
-        <form method="post" action="{% url 'forum:join_kolo' kolo='kolo-1' %}">
-             {% csrf_token %}
-             <button class="btn btn-primary">Dołącz do Koła</button>
-            </form>
-
+        <button class="btn btn-primary">Dołącz do Koła</button>
     </div>
 {% endblock %}

@@ -116,3 +116,61 @@ footer {
   position: relative;
   z-index: 1100;
 }
+
+/* STYLE DODATKOWE DLA STRON KÓŁ ZAINTERESOWAŃ */
+
+/* Styl kart */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+  background-color: #f8f9fa;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Nagłówki na podstronach */
+.container h1 {
+  color: #173358;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* Przyciski CTA (np. "Zapisz się") */
+.card .btn-primary {
+  background-color: #466ea2;
+  border-color: #466ea2;
+  font-weight: 600;
+  padding: 8px 20px;
+}
+
+.card .btn-primary:hover {
+  background-color: #3a5c8a;
+  border-color: #3a5c8a;
+}
+
+/* Lista w kartach */
+.card-body ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+/* Tło dla sekcji głównej */
+#page-content-wrapper {
+  background-color: #eef2f8;
+}
+
+/* Ujednolicenie przestrzeni wewnętrznej */
+.card-body {
+  padding: 20px;
+}
+
+/* Zaokrąglenie nagłówków kart */
+.card-title {
+  font-size: 1.25rem;
+  color: #173358;
+}
+

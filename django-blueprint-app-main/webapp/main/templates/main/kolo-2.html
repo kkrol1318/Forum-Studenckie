@@ -1,14 +1,54 @@
 {% extends 'main/layout/layout.html' %}
 
+{% load static %}
+
 {% block title %}Koło 2{% endblock %}
 
 {% block content %}
-    <div class="features">
-        <h1>Koło 2</h1>
-        <p>Opis 2. koła zainteresowań. Tutaj możesz dodać dowolny tekst opisujący działalność grupy, spotkania, projekty itp.</p>
-        <form method="post" action="{% url 'forum:join_kolo' kolo='kolo-2' %}">
-             {% csrf_token %}
-             <button class="btn btn-primary">Dołącz do Koła</button>
-            </form>
+
+<div class="w-100 mb-4" style="max-height: 300px; overflow: hidden;">
+    <img src="{% static 'main/img/kolo-2-banner.svg' %}" alt="Baner Koła IT" class="img-fluid w-100" style="object-fit: cover; height: 100%;">
+</div>
+<div class="container">
+    <h1>Koło Zainteresowań: Informatyczne</h1>
+    <p>Programujemy, rozwiązujemy algorytmy i uczymy się nowych technologii – od Pythona po AI. Wszyscy mile widziani!</p>
+
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">🗓️ Harmonogram Spotkań</h5>
+                    <ul class="mb-0">
+                        <li>Wtorek – warsztaty z Pythona (17:00-18:30)</li>
+                        <li>Czwartek – zajęcia z algorytmiki (17:00-19:00)</li>
+                        <li>Sobota – hackathony i projekty (10:00-13:00)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">🖼️ Galeria</h5>
+                    <ul class="mb-0">
+                        <li>Własna gra 2D – styczeń 2025</li>
+                        <li>Sztuczna inteligencja w Pythonie – luty 2025</li>
+                        <li>Projekt WWW – kwiecień 2025</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Dołącz do nas!</h5>
+                    <p class="card-text">Chcesz nauczyć się programować? Zacznij z nami!</p>
+                    <a href="mailto:kolo@informatyczne.pl" class="btn btn-primary">Zapisz się</a>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 {% endblock %}
